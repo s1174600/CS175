@@ -48,7 +48,7 @@ public class PaintCost {
         System.out.println("Area of Peak Sides= " + (a)); 
         System.out.println("Area of Windows= " + (x1));
         System.out.println("Area of Doors= " + (a1));
-        System.out.println("Area of House, not including WIndows and Doors= " + c);
+        System.out.println("Area of House, not including Windows and Doors= " + c);
         System.out.println("The cost to paint this house is $" + c1 + "0");
         
         
