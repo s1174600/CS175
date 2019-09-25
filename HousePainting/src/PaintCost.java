@@ -5,7 +5,8 @@ public class PaintCost {
 		/*
 		 * This program will calculate the cost to paint a house
 		 */
-        int houseLengthFeet=20;
+        System.out.println("The cost of painting per square foot= $2.00");
+		int houseLengthFeet=20;
         double inches = 6;
         System.out.println("houseLengthFeet= " + (houseLengthFeet + inches/12));
         
@@ -35,12 +36,23 @@ public class PaintCost {
         
         
         
-        double x = (houseLengthFeet + inches/12)*(houseWidthFeet + inches1/12);
-        double a = (1/2);
-        double y = (x) + a*((houseLengthFeet + inches/12)*((houseHeightFeet + inches2/12) - (houseWidthFeet + inches1/12)));
+        double x = 2*((houseLengthFeet + inches/12)*(houseWidthFeet + inches1/12));
+        double a = 2*((x) + .5*((houseLengthFeet + inches/12)*((houseHeightFeet + inches2/12) - (houseWidthFeet + inches1/12))));
+        double x1 = 4*((windowLengthFeet + inches3/12)*(windowWidthFeet + inches4/12));
+        double a1 = 2*((doorLengthFeet + inches5/12)*(doorWidthFeet + inches6/12));
+        double c = ((x+a)-(x1+a1));
+        double c1 = (c*2);
+       
+        System.out.println("Area of Normal Sides= " + (x));
+        System.out.println("Area of Peak Sides= " + (a)); 
+        System.out.println("Area of Windows= " + (x1));
+        System.out.println("Area of Doors= " + (a1));
+        System.out.println("Area of House, not including WIndows and Doors= " + c);
+        System.out.println("The cost to paint this house is $" + c1 + "0");
         
-        System.out.println("Area of Width= " + (x));
-        System.out.println("Area of Height= " + (y)); 
+        
+        
+        
         
         
         
