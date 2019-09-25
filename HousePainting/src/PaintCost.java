@@ -5,7 +5,8 @@ public class PaintCost {
 		/*
 		 * This program will calculate the cost to paint a house
 		 */
-        System.out.println("The cost of painting per square foot= $2.00");
+        System.out.println("The cost of painting per square foot is $2.00");
+        System.out.println("There are 2 normal sides and 2 peaked sides of the house, as well as 4 windows and 2 doors");
 		int houseLengthFeet=20;
         double inches = 6;
         System.out.println("houseLengthFeet= " + (houseLengthFeet + inches/12));
