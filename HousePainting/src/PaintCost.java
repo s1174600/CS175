@@ -92,14 +92,14 @@ public class PaintCost {
         
         
         System.out.println("Would you like to have the windows/doors painted as well?");
-		@SuppressWarnings("resource")
-		Scanner YorN = new Scanner(System.in);
-		System.out.println(YorN.nextLine() + ", then the area of the house minus the windows/doors is " + area);
+@SuppressWarnings("resource")
+Scanner YorN = new Scanner(System.in);
+System.out.println(YorN.nextLine() + ", then the area of the house minus the windows/doors is " + area);
 		
-		System.out.println("Please enter the cost to paint per square feet: ");
-		@SuppressWarnings("resource")
-		Scanner price = new Scanner(System.in);
-		System.out.println(price.nextLine() + "; therefore, the cost to paint this house is $" + cost + "0");
+System.out.println("Please enter the cost to paint per square feet: ");
+@SuppressWarnings("resource")
+Scanner price = new Scanner(System.in);
+System.out.println(price.nextLine() + "; therefore, the cost to paint this house is $" + cost + "0");
         
         
         
