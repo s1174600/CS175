@@ -11,6 +11,7 @@ public class PaintCost {
 		Scanner price = new Scanner(System.in);
 		int C = price.nextInt();
 		System.out.println("The cost of paint per square foot: " + C);
+		
 		System.out.println("Enter the number of normal sides of the house: ");
 		Scanner norm = new Scanner(System.in);
 		int numbernorm = norm.nextInt();
