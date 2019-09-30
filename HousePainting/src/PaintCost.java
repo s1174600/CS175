@@ -2,104 +2,93 @@ import java.util.Scanner;
 public class PaintCost {
 
 	
+	@SuppressWarnings("resource")
 	public static void main(String[] args) {
 		/*
 		 * This program will calculate the cost to paint a house
 		 */
-		
+		System.out.println("Enter the cost of paint per square foot: ");
+		Scanner price = new Scanner(System.in);
+		int C = price.nextInt();
+		System.out.println("The cost of paint per square foot: " + C);
 		System.out.println("Enter the number of normal sides of the house: ");
-		@SuppressWarnings("resource")
 		Scanner norm = new Scanner(System.in);
-		System.out.println("The number of normal sides is " + norm.nextLine());
+		int numbernorm = norm.nextInt();
+		System.out.println("The number of normal sides is " + numbernorm);
 		
 		System.out.println("Enter the number of peaked sides: ");
-		@SuppressWarnings("resource")
 		Scanner peak = new Scanner(System.in);
-		System.out.println("The number of peaked sides is " + peak.nextLine());
+		int numberpeak = peak.nextInt();
+		System.out.println("The number of peaked sides is " + numberpeak);
 		
 		System.out.println("Enter the number of windows in the house: ");
-		@SuppressWarnings("resource")
 		Scanner window = new Scanner(System.in);
-		System.out.println("The number of windows is " + window.nextLine());
+		int numberwindow = window.nextInt();
+		System.out.println("The number of windows is " + numberwindow);
 		
 		System.out.println("Enter the number of doors: ");
-		@SuppressWarnings("resource")
 		Scanner door = new Scanner(System.in);
-		System.out.println("The number of doors is " + door.nextLine());
+		int numberdoor = door.nextInt();
+		System.out.println("The number of doors is " + numberdoor);
 		
 		System.out.println("Enter the Length of the house: ");
-		@SuppressWarnings("resource")
-		Scanner L = new Scanner(System.in);
-		System.out.println("The length of the house is " + L.nextLine());
+		Scanner houseLengthFeet = new Scanner(System.in);
+		int L = houseLengthFeet.nextInt();
+		System.out.println("The length of the house is " + L);
 		
 		System.out.println("Enter the width of the house: ");
-		@SuppressWarnings("resource")
-		Scanner W = new Scanner(System.in);
-		System.out.println("The width of the house is " + W.nextLine());
+		Scanner houseWidthFeet = new Scanner(System.in);
+		int W = houseWidthFeet.nextInt();
+		System.out.println("The width of the house is " + W);
 		
 		System.out.println("Enter the height of the house: ");
-		@SuppressWarnings("resource")
-		Scanner H = new Scanner(System.in);
-		System.out.println("The height of the house is " + H.nextLine());
+		Scanner houseHeightFeet = new Scanner(System.in);
+		int H = houseHeightFeet.nextInt();
+		System.out.println("The height of the house is " + H);
 		
 		System.out.println("Enter the length of the windows: ");
-		@SuppressWarnings("resource")
-		Scanner WL = new Scanner(System.in);
-		System.out.println("The length of the windows is " + WL.nextLine());
+		Scanner windowLengthFeet = new Scanner(System.in);
+		int WL = windowLengthFeet.nextInt();
+		System.out.println("The length of the windows is " + WL);
 		
 		System.out.println("Enter the width of the windows: ");
-		@SuppressWarnings("resource")
-		Scanner WW = new Scanner(System.in);
-		System.out.println("The width of the windows is " + WW.nextLine());
+		Scanner windowWidthFeet = new Scanner(System.in);
+		int WW = windowWidthFeet.nextInt();
+		System.out.println("The width of the windows is " + WW);
 		
 		System.out.println("Enter the length of the doors: ");
-		@SuppressWarnings("resource")
-		Scanner DL = new Scanner(System.in);
-		System.out.println("The length of the doors is " + DL.nextLine());
+		Scanner doorLengthFeet = new Scanner(System.in);
+		int DL = doorLengthFeet.nextInt();
+		System.out.println("The length of the doors is " + DL);
 		
 		System.out.println("Enter the width of the doors: ");
-		@SuppressWarnings("resource")
-		Scanner DW = new Scanner(System.in);
-		System.out.println("The width of the doors is " + DW.nextLine());
+		Scanner doorWidthFeet = new Scanner(System.in);
+		int DW = doorWidthFeet.nextInt();
+		System.out.println("The width of the doors is " + DW);
 		
 		
-        int houseLengthFeet=40;
         
-        int houseWidthFeet=15;
-        
-        int houseHeightFeet=25;
-        
-        int windowLengthFeet=4;
-        
-        int windowWidthFeet=2;
-        
-        int doorLengthFeet=6;
-       
-        int doorWidthFeet=3;
 		
 		
-        double x = 2*((houseLengthFeet)*(houseWidthFeet));
+        double x = numbernorm*((L)*(W));
         
-        double a = 2*((x/2) + .5*(houseLengthFeet*(houseHeightFeet - houseWidthFeet)));
+        double a = numbernorm*((x/2) + .5*(L*(H - W)));
         
-        double x1 = 10*((windowLengthFeet)*(windowWidthFeet));
+        double x1 = numberwindow*((WL)*(WW));
         
-        double a1 = 2*((doorLengthFeet)*(doorWidthFeet));
+        double a1 = numberdoor*((DL)*(DW));
         
         double area = ((x+a)-(x1+a1));
         
-        double cost = (area*5);
+        double cost = (area*C);
         
         
-        System.out.println("Would you like to have the windows/doors painted as well?");
-        @SuppressWarnings("resource")
-        Scanner YorN = new Scanner(System.in);
-        System.out.println(YorN.nextLine() + ", then the area of the house minus the windows/doors is " + area);
-		
-        System.out.println("Please enter the cost to paint per square feet: ");
-        @SuppressWarnings("resource")
-        Scanner price = new Scanner(System.in);
-        System.out.println(price.nextLine() + "; therefore, the cost to paint this house is $" + cost + "0");
+        System.out.println("The area of the house minus the windows and doors is: " + area);
+        
+        System.out.println("The cost to paint this house is $" + cost + "0");
+        
+        
+        
         
         
         
