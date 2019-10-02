@@ -7,7 +7,6 @@ public class a44 {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		
-		@SuppressWarnings("resource")
 		Scanner keyIn = new Scanner(System.in);
 		int value1, value2;
 		
@@ -21,7 +20,36 @@ public class a44 {
 		
 		int sum = value1 + value2;
 		
-		System.out.println("value1 + value2: " + sum);
+		System.out.println("sum: " + sum);
+		
+		int difference = value1 - value2;
+		
+		System.out.println("difference: " + difference);
+		
+		int product = value1*value2;
+		
+		System.out.println("product: " + product);
+		
+		double average = ((double)sum/2);
+		
+		System.out.println("average: " + average);
+		
+		int distance = Math.abs(difference);
+		
+		System.out.println("distance: " + distance);
+		
+		int max = Math.max(value1, value2);
+		
+		System.out.println("maximum: " + max);
+		
+		int min = Math.min(value1, value2);
+		
+		System.out.println("minimum: " + min);
+		
+		
+		
+		
+		
 
 	}
 
