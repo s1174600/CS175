@@ -7,7 +7,7 @@ public class a43 {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		
-		@SuppressWarnings("resource")
+		
 		Scanner keyIn = new Scanner(System.in);
 		
 		System.out.println("Please enter a number now: ");
